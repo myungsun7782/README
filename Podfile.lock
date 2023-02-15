@@ -1,0 +1,54 @@
+PODS:
+  - Alamofire (5.6.4)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxGesture (4.0.4):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxKeyboard (2.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SnapKit (5.6.0)
+  - SwiftDate (7.0.0)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - RxCocoa
+  - RxGesture
+  - RxKeyboard
+  - RxSwift
+  - SnapKit
+  - SwiftDate
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - RxCocoa
+    - RxGesture
+    - RxKeyboard
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - SwiftDate
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
+  RxKeyboard: 4f5863f43b4ff0cbb2a20b94688d6b80c8a43c14
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftDate: bbc26e26fc8c0c33fbee8c140c5e8a68293a148a
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 8e877d54660540620ed88fbcfb03217a6b4abe04
+
+COCOAPODS: 1.11.3
