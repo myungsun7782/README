@@ -14,6 +14,15 @@
 		F00239D4299CAA1700A6680B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00239D2299CAA1700A6680B /* Main.storyboard */; };
 		F00239D6299CAA1800A6680B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00239D5299CAA1800A6680B /* Assets.xcassets */; };
 		F00239D9299CAA1800A6680B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00239D7299CAA1800A6680B /* LaunchScreen.storyboard */; };
+		F0CE64D6299CB02A00461300 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0CE64CD299CB02900461300 /* Pretendard-Bold.otf */; };
+		F0CE64D7299CB02A00461300 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0CE64CE299CB02900461300 /* Pretendard-ExtraLight.otf */; };
+		F0CE64D8299CB02A00461300 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0CE64CF299CB02900461300 /* Pretendard-Light.otf */; };
+		F0CE64D9299CB02A00461300 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0CE64D0299CB02900461300 /* Pretendard-ExtraBold.otf */; };
+		F0CE64DA299CB02A00461300 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0CE64D1299CB02900461300 /* Pretendard-SemiBold.otf */; };
+		F0CE64DB299CB02A00461300 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0CE64D2299CB02900461300 /* Pretendard-Thin.otf */; };
+		F0CE64DC299CB02A00461300 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0CE64D3299CB02900461300 /* Pretendard-Regular.otf */; };
+		F0CE64DD299CB02A00461300 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0CE64D4299CB02A00461300 /* Pretendard-Black.otf */; };
+		F0CE64DE299CB02A00461300 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0CE64D5299CB02A00461300 /* Pretendard-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +37,15 @@
 		F00239D5299CAA1800A6680B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F00239D8299CAA1800A6680B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F00239DA299CAA1800A6680B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0CE64CD299CB02900461300 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		F0CE64CE299CB02900461300 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
+		F0CE64CF299CB02900461300 /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
+		F0CE64D0299CB02900461300 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
+		F0CE64D1299CB02900461300 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		F0CE64D2299CB02900461300 /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		F0CE64D3299CB02900461300 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		F0CE64D4299CB02A00461300 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		F0CE64D5299CB02A00461300 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +124,15 @@
 		F0CE64C6299CAE7E00461300 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				F0CE64D4299CB02A00461300 /* Pretendard-Black.otf */,
+				F0CE64CD299CB02900461300 /* Pretendard-Bold.otf */,
+				F0CE64D0299CB02900461300 /* Pretendard-ExtraBold.otf */,
+				F0CE64CE299CB02900461300 /* Pretendard-ExtraLight.otf */,
+				F0CE64CF299CB02900461300 /* Pretendard-Light.otf */,
+				F0CE64D5299CB02A00461300 /* Pretendard-Medium.otf */,
+				F0CE64D3299CB02900461300 /* Pretendard-Regular.otf */,
+				F0CE64D1299CB02900461300 /* Pretendard-SemiBold.otf */,
+				F0CE64D2299CB02900461300 /* Pretendard-Thin.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -216,8 +243,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F00239D9299CAA1800A6680B /* LaunchScreen.storyboard in Resources */,
+				F0CE64D6299CB02A00461300 /* Pretendard-Bold.otf in Resources */,
+				F0CE64D9299CB02A00461300 /* Pretendard-ExtraBold.otf in Resources */,
+				F0CE64DB299CB02A00461300 /* Pretendard-Thin.otf in Resources */,
+				F0CE64DA299CB02A00461300 /* Pretendard-SemiBold.otf in Resources */,
+				F0CE64D7299CB02A00461300 /* Pretendard-ExtraLight.otf in Resources */,
+				F0CE64DD299CB02A00461300 /* Pretendard-Black.otf in Resources */,
 				F00239D6299CAA1800A6680B /* Assets.xcassets in Resources */,
+				F0CE64DC299CB02A00461300 /* Pretendard-Regular.otf in Resources */,
 				F00239D4299CAA1700A6680B /* Main.storyboard in Resources */,
+				F0CE64D8299CB02A00461300 /* Pretendard-Light.otf in Resources */,
+				F0CE64DE299CB02A00461300 /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
