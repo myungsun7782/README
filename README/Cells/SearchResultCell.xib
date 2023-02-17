@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="SearchResultCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultCell" rowHeight="328" id="KGk-i7-Jjw" customClass="SearchResultCell" customModule="README" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="328"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="447" height="328"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Nu7-wD-ubT">
+                        <rect key="frame" x="18" y="12" width="411" height="304"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="oaj-N1-K2j">
+                                <rect key="frame" x="0.0" y="0.0" width="411" height="86"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uqz-WZ-RTY">
+                                        <rect key="frame" x="0.0" y="0.0" width="312.33333333333331" height="86"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="pZz-5M-5nc">
+                                                <rect key="frame" x="0.0" y="0.0" width="312.33333333333331" height="69.666666666666671"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Title Label Label Title Label Title Label Label Title " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fio-Zp-oEO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="312.33333333333331" height="42"/>
+                                                        <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="18"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Mpl-n6-lcR">
+                                                <rect key="frame" x="0.0" y="69.666666666666671" width="312.33333333333331" height="16.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtb-vJ-icr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="16.333333333333332"/>
+                                                        <fontDescription key="fontDescription" name="Pretendard-Regular" family="Pretendard" pointSize="14"/>
+                                                        <color key="textColor" name="Gray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgG-TT-NRm">
+                                                        <rect key="frame" x="280.33333333333331" y="0.0" width="32" height="16.333333333333332"/>
+                                                        <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="13"/>
+                                                        <color key="textColor" name="CadmiumGreen"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="7jx-2e-9hX">
+                                        <rect key="frame" x="325" y="0.0" width="86" height="86"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fAa-4z-Uqm">
+                                                <rect key="frame" x="0.0" y="0.0" width="86" height="86"/>
+                                                <color key="backgroundColor" name="PastelGray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="86" id="1XK-H6-mJx"/>
+                                                    <constraint firstAttribute="width" constant="86" id="ALj-9I-cMu"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="NgF-ED-eWy">
+                                <rect key="frame" x="0.0" y="106" width="411" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tP-Tv-3Rx">
+                                        <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="30"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzB-Xf-JOX">
+                                                <rect key="frame" x="0.0" y="0.0" width="2" height="30"/>
+                                                <color key="backgroundColor" name="PastelGray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="2" id="caV-ag-VoF"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zgH-RV-zor">
+                                                <rect key="frame" x="2" y="0.0" width="79.333333333333329" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qs4-FH-eHf">
+                                                        <rect key="frame" x="14" y="5" width="65.333333333333329" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="rHG-XG-UVC"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="15"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="5" left="14" bottom="5" right="0.0"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ne0-iC-OFa">
+                                        <rect key="frame" x="0.0" y="30" width="81.333333333333329" height="30"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uyE-pC-0sM">
+                                                <rect key="frame" x="0.0" y="0.0" width="2" height="30"/>
+                                                <color key="backgroundColor" name="PastelGray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="2" id="cMQ-MJ-QVy"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jni-dM-Dce">
+                                                <rect key="frame" x="2" y="0.0" width="79.333333333333329" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFB-uW-iBf">
+                                                        <rect key="frame" x="14" y="5" width="65.333333333333329" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="817-TF-TLq"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="15"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="5" left="14" bottom="5" right="0.0"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bl-fR-ixh">
+                                        <rect key="frame" x="0.0" y="60" width="81.333333333333329" height="30"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hzm-jV-1UR">
+                                                <rect key="frame" x="0.0" y="0.0" width="2" height="30"/>
+                                                <color key="backgroundColor" name="PastelGray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="2" id="1Ga-0N-gXs"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cOn-gE-EGO">
+                                                <rect key="frame" x="2" y="0.0" width="79.333333333333329" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmc-Nr-yjg">
+                                                        <rect key="frame" x="14" y="5" width="65.333333333333329" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="EpR-JJ-kX4"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="15"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="5" left="14" bottom="5" right="0.0"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CzA-UO-1H1">
+                                        <rect key="frame" x="0.0" y="90" width="81.333333333333329" height="30"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPE-Cg-2XN">
+                                                <rect key="frame" x="0.0" y="0.0" width="2" height="30"/>
+                                                <color key="backgroundColor" name="PastelGray"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="2" id="Tz4-HX-3fm"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RUu-Te-Ecd">
+                                                <rect key="frame" x="2" y="0.0" width="79.333333333333329" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDb-F8-pXO">
+                                                        <rect key="frame" x="14" y="5" width="65.333333333333329" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="3jz-b4-njM"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="15"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="5" left="14" bottom="5" right="0.0"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YIx-5q-oKz">
+                                <rect key="frame" x="0.0" y="246" width="411" height="37"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpo-31-lWa">
+                                        <rect key="frame" x="0.0" y="0.0" width="411" height="37"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="관련뉴스">
+                                                <attributes>
+                                                    <color key="NSColor" name="CadmiumGreen"/>
+                                                    <font key="NSFont" size="15" name="Pretendard-Medium"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="15"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" O">
+                                                <attributes>
+                                                    <color key="NSColor" name="CadmiumGreen"/>
+                                                    <font key="NSFont" size="15" name="Pretendard-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="건">
+                                                <attributes>
+                                                    <color key="NSColor" name="CadmiumGreen"/>
+                                                    <font key="NSFont" size="15" name="Pretendard-Medium"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="15"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" name="CadmiumGreen"/>
+                                                    <font key="NSFont" size="15" name="Pretendard-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="전체보기">
+                                                <attributes>
+                                                    <color key="NSColor" name="CadmiumGreen"/>
+                                                    <font key="NSFont" size="15" name="Pretendard-Medium"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="15"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46U-SM-HqJ">
+                                <rect key="frame" x="0.0" y="303" width="411" height="1"/>
+                                <color key="backgroundColor" name="ChineseWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="lVn-3Z-Vqg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Nu7-wD-ubT" secondAttribute="bottom" constant="12" id="1l7-OE-gt7"/>
+                    <constraint firstItem="Nu7-wD-ubT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="RRB-fH-0Qc"/>
+                    <constraint firstItem="Nu7-wD-ubT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="bxD-ik-Oxc"/>
+                    <constraint firstAttribute="trailing" secondItem="Nu7-wD-ubT" secondAttribute="trailing" constant="18" id="hWq-3M-Rue"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="96.946564885496173" y="-116.19718309859155"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="CadmiumGreen">
+            <color red="0.016000000759959221" green="0.39599999785423279" blue="0.24699999392032623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ChineseWhite">
+            <color red="0.88200002908706665" green="0.88200002908706665" blue="0.88200002908706665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray">
+            <color red="0.74099999666213989" green="0.74099999666213989" blue="0.74099999666213989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PastelGray">
+            <color red="0.83099997043609619" green="0.82400000095367432" blue="0.77600002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
