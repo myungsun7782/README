@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct News {
+    var title: String?
+    var registerData: Int?
+}

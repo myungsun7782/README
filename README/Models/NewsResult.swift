@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct NewsResult {
+    var category: String?
+    var total: Int?
+    var newList: [News]?
+}
