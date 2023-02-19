@@ -253,6 +253,22 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="associatedNewsLabel" destination="Rpo-31-lWa" id="PoW-vk-BIQ"/>
+                <outlet property="associatedNewsStackView" destination="YIx-5q-oKz" id="TW9-Xu-rT4"/>
+                <outlet property="categoryLabel" destination="VgG-TT-NRm" id="7Zd-WB-soO"/>
+                <outlet property="dateLabel" destination="gtb-vJ-icr" id="qMh-fN-EL0"/>
+                <outletCollection property="titleLabelArray" destination="fio-Zp-oEO" collectionClass="NSMutableArray" id="mrf-ij-Toe"/>
+                <outletCollection property="titleLabelArray" destination="qs4-FH-eHf" collectionClass="NSMutableArray" id="GtA-nZ-sLY"/>
+                <outletCollection property="titleLabelArray" destination="xFB-uW-iBf" collectionClass="NSMutableArray" id="Ka4-wo-3EJ"/>
+                <outletCollection property="titleLabelArray" destination="dmc-Nr-yjg" collectionClass="NSMutableArray" id="8KY-5u-Ev6"/>
+                <outletCollection property="titleLabelArray" destination="nDb-F8-pXO" collectionClass="NSMutableArray" id="gkS-Qb-HNk"/>
+                <outletCollection property="newsStackViewArray" destination="Uqz-WZ-RTY" collectionClass="NSMutableArray" id="isj-YQ-aBN"/>
+                <outletCollection property="newsStackViewArray" destination="5tP-Tv-3Rx" collectionClass="NSMutableArray" id="hcS-hp-tfv"/>
+                <outletCollection property="newsStackViewArray" destination="Ne0-iC-OFa" collectionClass="NSMutableArray" id="8sL-Lc-WVZ"/>
+                <outletCollection property="newsStackViewArray" destination="1bl-fR-ixh" collectionClass="NSMutableArray" id="J2X-tI-Xkl"/>
+                <outletCollection property="newsStackViewArray" destination="CzA-UO-1H1" collectionClass="NSMutableArray" id="Hdi-9p-9Ho"/>
+            </connections>
             <point key="canvasLocation" x="96.946564885496173" y="-116.19718309859155"/>
         </tableViewCell>
     </objects>
