@@ -10,6 +10,11 @@ import SwiftyJSON
 
 enum SearchKey: String {
     case RESULT = "result"
+    case CATEGORY = "category"
+    case TOTAL = "total"
+    case NEWS_LIST = "newsList"
+    case TITLE = "title"
+    case REG_DATA = "reg_data"
 }
 
 class ParseManager {
@@ -27,5 +32,28 @@ class ParseManager {
         }
        
         return relationResultArray
+    }
+    
+    func parseSearchResultJSON(_ resultData: Data) -> [NewsResult]? {
+        let jsonArray = JSON(resultData).arrayValue
+        
+        var newsResultArray: [NewsResult] = Array<NewsResult>()
+        
+        for obj in jsonArray {
+            var newsList: [News] = Array<News>()
+            if obj[SearchKey.TOTAL.rawValue].intValue == 0 {
+                continue
+            }
+            
+            for news in obj[SearchKey.NEWS_LIST.rawValue].arrayValue {
+                let title = news[SearchKey.TITLE.rawValue].stringValue
+                let regData = news[SearchKey.REG_DATA.rawValue].intValue
+            
+                newsList.append(News(title: title, registerData: regData))
+            }
+            let newsResult = NewsResult(category: obj[SearchKey.CATEGORY.rawValue].stringValue, total: obj[SearchKey.TOTAL.rawValue].intValue, newsList: newsList)
+            newsResultArray.append(newsResult)
+        }
+        return newsResultArray
     }
 }
