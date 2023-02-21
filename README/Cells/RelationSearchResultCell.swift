@@ -8,16 +8,24 @@
 import UIKit
 
 class RelationSearchResultCell: UITableViewCell {
-
+    // UILabel
+    @IBOutlet weak var resultLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func setData(result: String) {
+        resultLabel.text = result
+        resultLabel.textColor = .black
     }
     
+    func addPointLabelColor(result: String) {
+        let attributedString = NSMutableAttributedString(string: resultLabel.text!)
+        
+        attributedString.addAttribute(.foregroundColor, value: ColorManager.shared.getCadmiumGreen(), range: (resultLabel.text! as NSString).range(of: result))
+    
+        resultLabel.attributedText = attributedString
+    }
 }
