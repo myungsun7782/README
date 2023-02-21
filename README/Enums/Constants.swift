@@ -14,6 +14,9 @@ public enum Cell {
     // UITableView
     static let relationSearchResultCell = "RelationSearchResultCell"
     static let recentSearchCell = "RecentSearchCell"
+    static let searchResultCell = "SearchResultCell"
+    static let newsHeaderCell = "NewsHeaderCell"
+    static let newsContentCell = "NewsContentCell"
 }
 
 public enum SearchApi {
@@ -23,7 +26,9 @@ public enum SearchApi {
 }
 
 public enum VC {
-    
+    static let searchMainVC = "SearchMainVC"
+    static let searchResultVC = "SearchResultVC"
+    static let detailNewsVC = "DetailNewsVC"
 }
 
 public enum Storyboard {
