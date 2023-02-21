@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3aY-B9-mQW">
-                                <rect key="frame" x="99.666666666666686" y="383.66666666666669" width="194" height="84.666666666666686"/>
+                                <rect key="frame" x="99.666666666666686" y="384" width="194" height="84.333333333333314"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteLogoImage" translatesAutoresizingMaskIntoConstraints="NO" id="Q7m-Ye-MRx">
                                         <rect key="frame" x="0.0" y="0.0" width="194" height="49"/>
@@ -27,10 +27,17 @@
                                             <constraint firstAttribute="width" constant="194" id="v70-PX-QQA"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by Little Farmer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nph-Ah-qyQ">
-                                        <rect key="frame" x="0.0" y="69" width="194" height="15.666666666666671"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" name="White"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nph-Ah-qyQ">
+                                        <rect key="frame" x="0.0" y="69" width="194" height="15.333333333333329"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Made by Little Farmer">
+                                                <attributes>
+                                                    <color key="NSColor" name="White"/>
+                                                    <font key="NSFont" size="13" name="Pretendard-Light"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
