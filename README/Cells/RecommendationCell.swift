@@ -16,9 +16,10 @@ class RecommendationCell: UICollectionViewCell {
     
     // Constants
     let VIEW_BORDER_WIDTH: CGFloat = 1
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        // UIView
         containerView.layer.borderWidth = VIEW_BORDER_WIDTH
         containerView.layer.borderColor = ColorManager.shared.getChineseSilver().cgColor
     }
