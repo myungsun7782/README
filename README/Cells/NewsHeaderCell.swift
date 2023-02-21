@@ -8,16 +8,36 @@
 import UIKit
 
 class NewsHeaderCell: UITableViewCell {
-
+    // UIImageView
+    @IBOutlet weak var newsImageView: UIImageView!
+    
+    // UILabel
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    // Constants
+    let TITLE_LINE_SPACING: CGFloat = 5
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        configureLabel()
     }
     
+    func setData(newsObj: News, category: String) {
+        guard let title = newsObj.title else { return }
+        guard let date = newsObj.registerData else { return }
+        categoryLabel.text = category
+        titleLabel.text = title
+        dateLabel.text = TimeManager.shared.getRegDataToDateString(regData: date)
+    }
+    
+    func configureLabel() {
+        let attrString = NSMutableAttributedString(string: titleLabel.text!)
+        let paragraphStyle = NSMutableParagraphStyle()
+        
+        paragraphStyle.lineSpacing = TITLE_LINE_SPACING
+        attrString.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attrString.length))
+        titleLabel.attributedText = attrString
+    }
 }
