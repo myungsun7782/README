@@ -59,4 +59,8 @@ class ColorManager {
     func getPhilippineGray() -> UIColor {
         return UIColor(named: "PhilippineGray")!
     }
+    
+    func getDavyGray() -> UIColor {
+        return UIColor(named: "DavyGray")!
+    }
 }
