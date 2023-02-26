@@ -15,6 +15,7 @@ class SearchMainVC: UIViewController {
     
     // UIButton
     @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     
     // UIView
     @IBOutlet weak var lineView: UIView!
@@ -43,7 +44,7 @@ class SearchMainVC: UIViewController {
     let COLLECTION_VIEW_CELL_WIDTH_WEIGHT: CGFloat = 30
     let TEXT_FIELD_PLACE_HOLDER: String = "뉴스 검색어를 입력해주세요 :)"
     let TEXT_FIELD_FONT_SIZE: CGFloat = 20.71
-    let BUTTON_IMAGE: UIImage? = UIImage(systemName: "magnifyingglass", withConfiguration: UIImage.SymbolConfiguration(pointSize: 23))
+    let SEARCH_BUTTON_IMAGE: UIImage? = UIImage(systemName: "magnifyingglass", withConfiguration: UIImage.SymbolConfiguration(pointSize: 23))
     let LINE_VIEW_TARGET_HEIGHT: CGFloat = 80
     let LINE_INCREASE_NUMBER: CGFloat = 0.001
     let ANIMATION_DURATION: TimeInterval = 0.5
@@ -52,6 +53,7 @@ class SearchMainVC: UIViewController {
     let ALERT_TITLE: String = "메시지"
     let ALERT_MESSAGE: String = "검색어는 1글자 이상 입력해주세요 :)"
     let ALERT_BUTTON_TITLE: String = "확인"
+    let BACK_BUTTON_IMAGE: UIImage? = UIImage(systemName: "arrow.backward", withConfiguration: UIImage.SymbolConfiguration(pointSize: 23))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,7 +108,12 @@ class SearchMainVC: UIViewController {
                 }
             })
             .disposed(by: disposeBag)
-
+        
+        backButton.rx.tap
+            .subscribe(onNext: { _ in
+                self.dismiss(animated: true)
+            })
+            .disposed(by: disposeBag)
     }
     
     private func bind() {
@@ -140,7 +147,8 @@ class SearchMainVC: UIViewController {
     }
     
     private func configureButton() {
-        searchButton.setImage(BUTTON_IMAGE, for: .normal)
+        searchButton.setImage(SEARCH_BUTTON_IMAGE, for: .normal)
+        backButton.setImage(BACK_BUTTON_IMAGE, for: .normal)
     }
     
     private func configureCollectionView() {

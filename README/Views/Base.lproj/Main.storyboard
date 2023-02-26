@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="deH-Wk-CfR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -16,9 +16,33 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenLogoImage" translatesAutoresizingMaskIntoConstraints="NO" id="cXp-oK-Ucp">
+                                <rect key="frame" x="132" y="67" width="129" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ABb-WQ-HPN"/>
+                                    <constraint firstAttribute="width" constant="129" id="cul-L7-bff"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LK4-Bi-7sB">
+                                <rect key="frame" x="0.0" y="127" width="393" height="725"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="LK4-Bi-7sB" firstAttribute="top" secondItem="cXp-oK-Ucp" secondAttribute="bottom" constant="25" id="71p-Ar-wx2"/>
+                            <constraint firstAttribute="bottom" secondItem="LK4-Bi-7sB" secondAttribute="bottom" id="7nS-qO-TOr"/>
+                            <constraint firstItem="cXp-oK-Ucp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="L69-RR-C5r"/>
+                            <constraint firstItem="LK4-Bi-7sB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Orr-oT-wJb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LK4-Bi-7sB" secondAttribute="trailing" id="U18-jR-Sej"/>
+                            <constraint firstItem="cXp-oK-Ucp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z0o-se-8Va"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainTableView" destination="LK4-Bi-7sB" id="nBK-NU-I63"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,6 +70,19 @@
                                     <constraint firstAttribute="height" constant="35" id="eJG-y1-vH7"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vja-KB-qok">
+                                <rect key="frame" x="24" y="72" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="466-uU-2mG"/>
+                                    <constraint firstAttribute="width" constant="25" id="dFj-sK-MG8"/>
+                                </constraints>
+                                <color key="tintColor" name="White"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="arrow.backward" catalog="system"/>
+                                <connections>
+                                    <action selector="backButton:" destination="3Ck-nc-bs5" eventType="touchUpInside" id="cwt-Lk-MdX"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qH8-j8-Vth">
                                 <rect key="frame" x="0.0" y="125" width="393" height="1"/>
                                 <color key="backgroundColor" name="CadmiumGreen"/>
@@ -152,6 +189,7 @@
                         <color key="backgroundColor" name="White"/>
                         <constraints>
                             <constraint firstItem="tIR-xj-5zA" firstAttribute="top" secondItem="J71-Ig-nXL" secondAttribute="top" constant="8" id="0Jv-FB-hcN"/>
+                            <constraint firstItem="tIR-xj-5zA" firstAttribute="centerY" secondItem="Vja-KB-qok" secondAttribute="centerY" id="1Nk-QI-WGg"/>
                             <constraint firstItem="qH8-j8-Vth" firstAttribute="leading" secondItem="J71-Ig-nXL" secondAttribute="leading" id="AEF-kx-oL8"/>
                             <constraint firstItem="eL7-zu-AQ6" firstAttribute="top" secondItem="8Pd-Kw-O49" secondAttribute="top" id="BOe-WB-Rau"/>
                             <constraint firstItem="J71-Ig-nXL" firstAttribute="trailing" secondItem="qH8-j8-Vth" secondAttribute="trailing" id="O0q-tc-fJ3"/>
@@ -159,6 +197,7 @@
                             <constraint firstItem="qH8-j8-Vth" firstAttribute="top" secondItem="eL7-zu-AQ6" secondAttribute="bottom" id="RvQ-vs-QhX"/>
                             <constraint firstItem="tIR-xj-5zA" firstAttribute="centerX" secondItem="8Pd-Kw-O49" secondAttribute="centerX" id="Tui-Hm-Y53"/>
                             <constraint firstItem="J71-Ig-nXL" firstAttribute="trailing" secondItem="eL7-zu-AQ6" secondAttribute="trailing" id="W4s-IY-o0g"/>
+                            <constraint firstItem="Vja-KB-qok" firstAttribute="leading" secondItem="J71-Ig-nXL" secondAttribute="leading" constant="24" id="X9f-y1-kTr"/>
                             <constraint firstItem="Ash-jy-IBc" firstAttribute="top" secondItem="eL7-zu-AQ6" secondAttribute="bottom" constant="25" id="eQg-gl-5J4"/>
                             <constraint firstItem="eL7-zu-AQ6" firstAttribute="leading" secondItem="J71-Ig-nXL" secondAttribute="leading" id="fIm-C6-Fln"/>
                             <constraint firstItem="J71-Ig-nXL" firstAttribute="trailing" secondItem="Ash-jy-IBc" secondAttribute="trailing" constant="20" id="ndv-PP-wdT"/>
@@ -169,6 +208,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="Vja-KB-qok" id="4hY-Hg-lrM"/>
                         <outlet property="dynamicLineViewHeight" destination="g2q-gb-EvM" id="iTi-Ze-dqy"/>
                         <outlet property="lineView" destination="AoC-pu-SOB" id="qtC-XW-9R0"/>
                         <outlet property="recommendationCollectionView" destination="W5e-SH-Wo2" id="9m9-jl-Q9D"/>
@@ -180,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bIt-p1-wF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="-31"/>
+            <point key="canvasLocation" x="1052.6717557251909" y="-31.690140845070424"/>
         </scene>
         <!--Search ResultVC-->
         <scene sceneID="G66-vD-1Kc">
