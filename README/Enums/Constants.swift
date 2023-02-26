@@ -17,6 +17,7 @@ public enum Cell {
     static let searchResultCell = "SearchResultCell"
     static let newsHeaderCell = "NewsHeaderCell"
     static let newsContentCell = "NewsContentCell"
+    static let mainCell = "MainCell"
 }
 
 public enum SearchApi {
